@@ -2,6 +2,7 @@
     "homepage": "https://www.haskellstack.org",
     "license": "BSD-3-Clause",
     "version": "1.7.1",
+    "notes": "setting local-bin-path in stack.yaml for portable reason, see this guide: https://github.com/commercialhaskell/stack/issues/730",
     "architecture": {
         "64bit": {
             "url": "https://github.com/commercialhaskell/stack/releases/download/v1.7.1/stack-1.7.1-windows-x86_64.zip",
@@ -21,12 +22,12 @@
         ]
     ],
     "persist": ["config"],
-    "installer": {
-        "script": "add_first_in_path \"$env:APPDATA\\local\\bin\" $global"
-    },
-    "uninstaller": {
-        "script": "remove_from_path \"$env:APPDATA\\local\\bin\" $global"
-    },
+    // "installer": {
+    //     "script": "add_first_in_path \"$env:APPDATA\\local\\bin\" $global"
+    // },
+    // "uninstaller": {
+    //     "script": "remove_from_path \"$env:APPDATA\\local\\bin\" $global"
+    // },
     "checkver": {
         "github": "https://github.com/commercialhaskell/stack"
     },
