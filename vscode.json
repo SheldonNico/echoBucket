@@ -6,19 +6,20 @@
     "bin": [
         [
             "bin\\code.cmd",
-            "code"
+            "code",
+            "--user-data-dir $dir\\config",
+            "--extensionHomePath $dir\\extension"
         ]
     ],
-    "shortcuts": [
-        [
-            "code.exe",
-            "Visual Studio Code"
-        ]
-    ],
+    "pre_install": "new-item -itemtype directory \"$dir\\config\"; new-item -itemtype directory \"$dir\\extension\"",
     "checkver": {
         "url": "https://code.visualstudio.com/sha?build=stable",
         "jp": "$.products[?(@.platform.os == 'win32-x64-archive')].name"
     },
+    "persist": [
+        "config",
+        "extension"
+    ],
     "architecture": {
         "64bit": {
             "url": "https://vscode-update.azurewebsites.net/1.23.1/win32-x64-archive/stable#/dl.7z",
