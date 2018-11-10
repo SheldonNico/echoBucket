@@ -1,6 +1,6 @@
 {
     "homepage": "https://code.visualstudio.com/",
-    "version": "1.24.0",
+    "version": "1.28.2",
     "license": "https://code.visualstudio.com/License/",
     "notes": "Want to add vscode as a context menu option in explorer? See this guide: http://thisdavej.com/right-click-on-windows-folder-and-open-with-visual-studio-code/",
     "bin": [
@@ -22,12 +22,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://vscode-update.azurewebsites.net/1.24.0/win32-x64-archive/stable#/dl.7z",
-            "hash": "09c80815e826df942600e201c0dce900943b5f9d557cb7bcb97e67f52eadd64a"
+            "url": "https://vscode-update.azurewebsites.net/1.28.2/win32-x64-archive/stable#/dl.7z",
+            "hash": "ed2ce139ead23e90ee7eb9e6a679ac2fb1e43f087248d2d97793dc1a030e2809"
         },
         "32bit": {
-            "url": "https://vscode-update.azurewebsites.net/1.24.0/win32-archive/stable#/dl.7z",
-            "hash": "b151ce2439c82500fb7dd6c3413f290b775645c7b3afb3d03e20e23c2ed0acb8"
+            "url": "https://vscode-update.azurewebsites.net/1.28.2/win32-archive/stable#/dl.7z",
+            "hash": "3a2b38b8ccfe776ed78d497ad04d0d972d7ffc21db89c4d74f518498756fcd97"
         }
     },
     "autoupdate": {
